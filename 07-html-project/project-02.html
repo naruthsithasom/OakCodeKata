@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Project-02</title>
+    <style>
+      h1{
+        color: darkblue;
+      }
+      h2{
+        color: mediumslateblue;
+        font-style: italic;
+      }
+      input{
+        width: 200px;
+        line-height: 16px;
+      }
+      select{
+        width: 200px;
+      }
+      fieldset{
+        width: 560px;
+      }
+      input[type=number]::-webkit-inner-spin-button, 
+      input[type=number]::-webkit-outer-spin-button {  
+      opacity: 1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <h1>A Simple Form</h1>
+      <h2>Form Fundaentals</h2>
+      <fieldset>
+        <legend>Customer Info</legend>
+        <p> <label for="">Name:</label><input type="text" placeholder="Enter yourname" name="name"></p>
+        <p><label for="">Telephone:</label><input type="text" placeholder="Pattern 1-234-567-890" name="tel"></p>
+        <p><label for="">Email Address:</label><input type="text" placeholder="Enter your email address"></p>
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend>Books</legend>
+        <span><input type="text"></span>
+        <span><label for="">Quantity:(Maximum 5):</label><input type="number" min="1" max="5"/></span>
+      </fieldset>
+      <br>
+      <button type="submit">Submit</button>
+      <p style="padding-left:15px;">&copy; 2011 Acme United All right reserved</p>
+    </form>
+  </body>
+</html>

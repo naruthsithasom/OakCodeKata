@@ -8,10 +8,19 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <style>
-    .cus-body {
-      font-famly: Arial, Helvetica, sans-serif;
+    .container-header{
+      background-color: #f72210;
+      height: 95px;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
     }
-
+    .container-nav{
+   
+    }
+    .cus-ul-nav {
+      width: 100%;
+    }
     .cus-li-nav {
       border-right: 1px solid #ccc;
       width: 9.09%;
@@ -19,11 +28,12 @@
       font-weight: bolder;
       font-size: 12px;
     }
-
-    .cus-ul-nav {
-      width: 100%;
+    .cus-li-nav > .nav-link:hover {
+      color: #f72210 !important;
     }
-
+    .cus-li-nav02 > .nav-link:hover{
+      color: #f72210 !important;
+    }
     .cus-li-nav02 {
       font-weight: bolder;
       font-size: 12px;
@@ -43,7 +53,7 @@
 
     h3>a:hover {
       color: black;
-      text-decoration-color: red;
+      text-decoration-color: #f72210;
     }
     .wrap-col2-box2 > .cus-row{
       margin: 1.25rem;
@@ -53,81 +63,98 @@
       margin: 1.25rem;
       border: none;
     }
+    .wrap-col3-box3 {
+      margin: 1.25rem;
+      border: none;
+    }
+    .col3-box1{
+      display: flex;
+      flex-direction: row;
+    }
   </style>
 </head>
 
-<body class="cus-body">
-  <header class="bg-danger py-2 text-center">
-    <h1 class="text-white">Newsweek</h1>
+<body>
+
+  <header class="container-header">
+    <div class=" text-center ">
+      <h1 class="text-white">Newsweek</h1>
+    </div>
   </header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 px-0">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarNav">
-      <ul class="navbar-nav cus-ul-nav my-2">
-        <li class="nav-item active cus-li-nav ">
-          <a class="nav-link text-dark" href="#">U.S. <span class="sr-only">(current)</span></a>
+ 
+  <div class="container-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 px-0 ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav cus-ul-nav my-2">
+          <li class="nav-item active cus-li-nav ">
+            <a class="nav-link text-dark" href="#">U.S. <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item cus-li-nav">
+            <a class="nav-link text-dark" href="#">World</a>
+          </li>
+          <li class="nav-item cus-li-nav">
+            <a class="nav-link text-dark" href="#">Business</a>
+          </li>
+          <li class="nav-item cus-li-nav">
+            <a class="nav-link text-dark " href="#">Tech & Science</a>
+          </li>
+          <li class="nav-item cus-li-nav">
+            <a class="nav-link text-dark" href="#">Culture</a>
+          </li>
+          <li class="nav-item cus-li-nav">
+            <a class="nav-link text-dark" href="#">Newsgeek</a>
+          </li>
+          <li class="nav-item cus-li-nav">
+            <a class="nav-link text-dark" href="#">Sports</a>
+          </li>
+          <li class="nav-item cus-li-nav">
+            <a class="nav-link text-dark" href="#">Health</a>
+          </li>
+          <li class="nav-item cus-li-nav">
+            <a class="nav-link text-dark" href="#">The Debate</a>
+          </li>
+          <li class="nav-item cus-li-nav">
+            <a class="nav-link text-dark" href="#">Vantage</a>
+          </li>
+          <li class="nav-item cus-li-nav">
+            <a class="nav-link text-dark" href="#">Weather</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <hr class="my-0">
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 px-4">
+  
+      <ul class="navbar-nav cus-ul-nav02">
+        <li class="nav-item cus-li-nav02">
+          <a class="nav-link " href="#">TRENDING</a>
         </li>
-        <li class="nav-item cus-li-nav">
-          <a class="nav-link text-dark" href="#">World</a>
+        <li class="nav-item cus-li-nav02">
+          <a class="nav-link" href="#">DONALD TRUMP</a>
         </li>
-        <li class="nav-item cus-li-nav">
-          <a class="nav-link text-dark" href="#">Business</a>
+        <li class="nav-item cus-li-nav02">
+          <a class="nav-link" href="#">JOE BIDEN</a>
         </li>
-        <li class="nav-item cus-li-nav">
-          <a class="nav-link text-dark " href="#">Tech & Science</a>
+        <li class="nav-item cus-li-nav02">
+          <a class="nav-link" href="#">CHINA</a>
         </li>
-        <li class="nav-item cus-li-nav">
-          <a class="nav-link text-dark" href="#">Culture</a>
+        <li class="nav-item cus-li-nav02">
+          <a class="nav-link" href="#">CORONAVIRUS</a>
         </li>
-        <li class="nav-item cus-li-nav">
-          <a class="nav-link text-dark" href="#">Newsgeek</a>
-        </li>
-        <li class="nav-item cus-li-nav">
-          <a class="nav-link text-dark" href="#">Sports</a>
-        </li>
-        <li class="nav-item cus-li-nav">
-          <a class="nav-link text-dark" href="#">Health</a>
-        </li>
-        <li class="nav-item cus-li-nav">
-          <a class="nav-link text-dark" href="#">The Debate</a>
-        </li>
-        <li class="nav-item cus-li-nav">
-          <a class="nav-link text-dark" href="#">Vantage</a>
-        </li>
-        <li class="nav-item cus-li-nav">
-          <a class="nav-link text-dark" href="#">Weather</a>
+        <li class="nav-item cus-li-nav02">
+          <a class="nav-link" href="#">2020 ELECTION</a>
         </li>
       </ul>
-    </div>
-  </nav>
-  <hr class="my-0">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 px-4">
+    </nav>
+    <hr class="my-0">
+  </div> <!-- Close Nav-->
 
-    <ul class="navbar-nav cus-ul-nav02">
-      <li class="nav-item cus-li-nav02">
-        <a class="nav-link " href="#">TRENDING</a>
-      </li>
-      <li class="nav-item cus-li-nav02">
-        <a class="nav-link" href="#">DONALD TRUMP</a>
-      </li>
-      <li class="nav-item cus-li-nav02">
-        <a class="nav-link" href="#">JOE BIDEN</a>
-      </li>
-      <li class="nav-item cus-li-nav02">
-        <a class="nav-link" href="#">CHINA</a>
-      </li>
-      <li class="nav-item cus-li-nav02">
-        <a class="nav-link" href="#">CORONAVIRUS</a>
-      </li>
-      <li class="nav-item cus-li-nav02">
-        <a class="nav-link" href="#">2020 ELECTION</a>
-      </li>
-    </ul>
-  </nav>
-  <hr class="my-0">
   <div class="row mx-0 px-0">
     <div class="col-3 pr-0">
       <div class="card cus-card-col2">
@@ -346,7 +373,18 @@
       
     </div> <!-- Close Column2-->
     <div class="col-3 bg-success mx-0 px-0">
-      Co3
+      <div class="wrap-col2-box3">
+        <div class="col3-box1">
+          <img class="col3-box1-1"src="Newsweek /joel-l-daniels.png" alt="" width="63px" height="63px">
+          <div class="col3-box1-2">
+            <p>America Was Conceived in Racism</p>
+            <p>BY JOEL L. DANIELS</p>
+          </div>
+        </div>
+        <div class="col3-box2 ">
+          sdfsdf
+        </div>
+      </div>
     </div><!-- Close Column3-->
   </div>
 

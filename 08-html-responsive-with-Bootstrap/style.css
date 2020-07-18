@@ -1,0 +1,102 @@
+@font-face{
+  font-family: 'Roboto_slab';
+  src: url('font/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf');
+}
+
+header {
+  background-color: #f72210;
+  height: 95px;
+}
+header .box1{
+  height: 95px;
+}
+header .box-2{
+  font-family: 'Roboto_slab';
+  font-size: 4.5rem;
+  font-weight: 900;
+  height: 95px;
+}
+header .box3{
+  height: 95px;
+}
+header .btn-cus{
+  border-radius: 2.25rem;;
+}
+/*------------------------------*/
+.box2-header > h1{
+  font-family: 'Roboto_slab';
+}
+.box3-header{
+
+}
+.cus-ul-nav {
+  width: 100%;
+}
+.cus-li-nav {
+  border-right: 1px solid #ccc;
+  width: 9.09%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.cus-li-nav>.nav-link:hover {
+  color: #f72210 !important;
+}
+
+.cus-li-nav02>.nav-link:hover {
+  color: #f72210 !important;
+}
+
+.cus-li-nav02 {
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.cus-ul-nav02 {
+  width: 100%;
+}
+
+.cus-card-col1,
+.cus-card-col2 {
+  border: none;
+}
+
+h3>a {
+  color: black;
+}
+
+h3>a:hover {
+  color: black;
+  text-decoration-color: #f72210;
+}
+
+.wrap-col2-box2>.cus-row {
+  margin: 1.25rem;
+  border: none;
+}
+
+.wrap-col2-box3 {
+  margin: 1.25rem;
+  border: none;
+}
+
+.wrap-col3-box3 {
+  margin: 1.25rem;
+  border: none;
+}
+
+.col3-box1 {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 991px) {
+  .cus-li-nav {
+    width: 100%;
+  }
+
+  .cus-navbar02 {
+    display: none;
+  }
+}
